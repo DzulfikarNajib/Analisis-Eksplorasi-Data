@@ -39,5 +39,5 @@ Repositori ini berisi dokumentasi dan implementasi proyek untuk mata kuliah **An
 * **Visualization:** Matplotlib, Seaborn, Plotly
 * **Environment:** Jupyter Notebook / Google Colab
 
-## 💡 Kesimpulan
+## Kesimpulan
 Melalui mata kuliah ini, saya menyadari bahwa **"Better data beats fancier algorithms"**. Proses eksplorasi yang mendalam adalah kunci utama dalam membangun model yang akurat dan menghindari bias.
