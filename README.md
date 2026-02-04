@@ -1,43 +1,48 @@
-# Analisis Eksplorasi Data (Exploratory Data Analysis)
+# 📊 Analisis Eksplorasi Data (Exploratory Data Analysis)
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Library-Pandas%20%7C%20NumPy%20%7C%20Matplotlib-orange.svg)]()
 [![Status](https://img.shields.io/badge/Status-Completed-success.svg)]()
+[![Course](https://img.shields.io/badge/Course-IPB--University-green.svg)]()
 
-## Deskripsi Mata Kuliah
-Repositori ini berisi dokumentasi dan implementasi proyek untuk mata kuliah **Analisis Eksplorasi Data (AED)**. Fokus utama dari studi ini adalah memahami karakteristik data, menemukan pola tersembunyi, serta menguji hipotesis melalui teknik statistika dan visualisasi sebelum melangkah ke tahap *Machine Learning*.
+## 📝 Deskripsi Mata Kuliah
+Repositori ini berisi implementasi dari mata kuliah **Analisis Eksplorasi Data (STA1232)**. Berbeda dengan analisis klasik yang langsung masuk ke pemodelan, di sini saya belajar untuk membiarkan "data yang berbicara" melalui identifikasi struktur, pola, dan anomali menggunakan teknik visual dan statistik yang fleksibel.
 
-## Apa yang Saya Pelajari & Terapkan?
+---
 
-### 1. Data Cleaning & Preprocessing
-*Proses memastikan data siap untuk dianalisis.*
-* **Handling Missing Values:** Menggunakan teknik imputasi (mean/median/mode) atau penghapusan data yang hilang secara tepat.
-* **Outlier Detection:** Identifikasi pencilan menggunakan metode *Interquartile Range* (IQR) dan *Z-Score*.
-* **Data Consistency:** Memperbaiki tipe data, standardisasi satuan, dan penanganan data duplikat.
+## 🚀 Apa yang Saya Pelajari? (Based on Syllabus)
 
-### 2. Data Management & Manipulation
-*Transformasi data mentah menjadi informasi terstruktur.*
-* **Feature Engineering:** Membuat variabel baru yang lebih informatif dari data yang ada.
-* **Data Wrangling:** Teknik *slicing, filtering, grouping,* dan *merging* dataset yang kompleks.
-* **Reshaping Data:** Penggunaan fungsi `pivot`, `melt`, dan `stack/unstack` untuk mengubah dimensi data.
+### 📈 1. Statistika Deskriptif & Bentuk Sebaran
+Bukan sekadar rata-rata, saya mendalami karakteristik bentuk data:
+* **Pemusatan & Penyebaran:** Mean, Median, Modus, Quartile, dan Standard Deviation.
+* **Bentuk Sebaran:** Menganalisis kemiringan (**Skewness**) dan keruncingan kurva (**Kurtosis**) menggunakan metode Karl Pearson dan Bowley.
+* **Klasifikasi Kurtosis:** Membedakan data bersifat *Leptokurtik*, *Platikurtik*, atau *Mesokurtik*.
 
-### 3. Statistical Analysis
-*Bedah data melalui pendekatan matematis.*
-* **Analisis Deskriptif:** Mengukur nilai pusat (Mean, Median) dan persebaran data (Variance, Std Deviation).
-* **Distribusi Data:** Menganalisis *Skewness* dan *Kurtosis* untuk memahami bentuk sebaran data.
-* **Korelasi:** Mengukur hubungan antar variabel menggunakan metode *Pearson* atau *Spearman*.
+### 🖼️ 2. Visualisasi Sebaran Univariat
+Teknik visualisasi untuk memahami distribusi satu variabel:
+* **Histogram & Boxplot:** Alat utama untuk melihat sebaran dan mendeteksi anomali.
+* **Kernel Density Estimation (KDE):** Menggunakan fungsi kernel dan pemilihan *bandwidth* ($h$) yang tepat untuk memuluskan kurva distribusi data kontinyu.
 
-### 4. Data Visualization
-*Komunikasi data melalui visual yang informatif.*
-* **Univariate Analysis:** Histogram, Box Plot, dan Density Plot untuk melihat karakteristik satu variabel.
-* **Bivariate & Multivariate:** Scatter Plot, Heatmap, dan Pair Plot untuk melihat interaksi antar variabel.
-* **Interactive Charts:** (Opsional: tambahkan jika kamu pakai Plotly atau Tableau).
+### 🔍 3. Pemeriksaan Sebaran Data (Normality Test)
+Prosedur formal untuk mengecek apakah data mengikuti distribusi tertentu (terutama Normal):
+* **QQ-Plot (Quantile-Quantile Plot):** Membandingkan kuantil data amatan dengan kuantil teoritis.
+* **Uji Formal:** Menggunakan uji Kolmogorov-Smirnov, Shapiro-Wilk, dan Anderson-Darling.
 
-## Tech Stack
-* **Language:** Python / R
-* **Libraries:** Pandas, NumPy, Scipy
-* **Visualization:** Matplotlib, Seaborn, Plotly
-* **Environment:** Jupyter Notebook / Google Colab
+### 🚨 4. Pendeteksian Pencilan (Outlier Detection)
+Mempelajari berbagai jenis pencilan (Global, Kontekstual, dan Kolektif) menggunakan:
+* **Metode Klasik:** Z-Score dan Interquartile Range (IQR).
+* **Metode Robust:** Median Absolute Deviation (MAD) dan Schwertman’s Fence.
 
-## Kesimpulan
-Melalui mata kuliah ini, saya menyadari bahwa **"Better data beats fancier algorithms"**. Proses eksplorasi yang mendalam adalah kunci utama dalam membangun model yang akurat dan menghindari bias.
+### 🛡️ 5. Statistika Kekar (Robust Statistics)
+Mempelajari metode pendugaan parameter yang tidak sensitif terhadap *outlier*:
+* **Penduga Lokasi Robust:** *Trimmed Mean* (rata-rata terpangkas) dan *Winsorized Mean*.
+* **Pentingnya Robustness:** Memahami bahwa metode klasik bisa sangat bias jika data mengandung pencilan yang ekstrem.
+
+---
+
+## 🛠️ Tools & Libraries
+* **Language:** Python / R (Tidyverse/ggplot2)
+* **Key Libraries:** NumPy, Pandas, Scipy.stats, Matplotlib, Seaborn.
+
+---
+
+## 💡 Key Takeaway
+"Pendekatan eksplorasi mendahulukan data sebelum model. Tujuannya adalah memastikan struktur data dipahami dengan benar agar kesimpulan yang diambil tidak menyesatkan akibat adanya pencilan atau pelanggaran asumsi distribusi."
