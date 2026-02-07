@@ -17,5 +17,8 @@ Repositori ini berisi catatan dan praktik dari mata kuliah **Analisis Eksplorasi
 - **Python / R**
 - NumPy, Pandas, Scipy, Matplotlib, Seaborn, ggplot2
 
+## Data Tugas (SUSENAS JABAR 2023)
+https://drive.google.com/drive/folders/1pngasZFpxak9RWfJVFevlpWe5Emj3By7?usp=sharing
+
 ## Inti Pembelajaran
 Exploratory Data Analysis (EDA) menekankan pentingnya eksplorasi data sebelum pemodelan agar hasil analisis tidak bias akibat pencilan atau pelanggaran asumsi.
